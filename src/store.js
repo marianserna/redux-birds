@@ -1,15 +1,15 @@
 import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevtools } from 'redux-devtools-extension';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import reducer from './reducer';
 
-export default crateStore(
+export default createStore(
   reducer,
   // initial state
   {
     birds: []
   },
   // before actions
-  composeWithDevtools(applyMiddleware(thunk))
+  composeWithDevTools(applyMiddleware(thunk))
 );
