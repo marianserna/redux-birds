@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import BirdForm from './BirdForm';
+import BirdList from './BirdList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        yoyo!
+        <BirdForm />
+        <BirdList />
       </div>
     );
   }
